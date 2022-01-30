@@ -1,6 +1,9 @@
 const fs = require('fs');
 const util = require('util');
 
+// This file was borrowed from bootcamp activities.
+
+
 // Promise version of fs.readFile
 const readFromFile = util.promisify(fs.readFile);
 /**
