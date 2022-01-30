@@ -1,12 +1,7 @@
 [
     {
-        "title": "wieoru",
-        "text": "sdjfbli4u3h",
-        "note_id": "20eb4a3e-f61c-48b7-bf21-1fdc853a0f41"
-    },
-    {
-        "title": "32424",
-        "text": "sdvsfsfsfsf",
-        "note_id": "b5c7b423-6b02-4532-b821-88a06add2ac8"
+        "title": "How This Note Taker works",
+        "text": "To create a new note, hit the plus button in the upper-right corner.\n\nYou can then write your title, then your notes. Once done, you can save the note by clicking the save icon in the upper right corner. (It will only appear if a title and note has been typed in.)\n\nTo see your previous note, click on the note name displayed on the left-hand side, and your note will be displayed in the main note area.\n\nTo delete a note, click on the trashcan icon next to the note title you want to delete.",
+        "id": "cebd16ca-eca6-4702-9b36-bd9f79d0d359"
     }
 ]

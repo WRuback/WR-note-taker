@@ -17,7 +17,7 @@ notesRouter.post("/", (req, res) => {
         const newNote = {
             title,
             text,
-            note_id: uuidv4()
+            id: uuidv4()
         };
 
         readAndAppend(newNote, './db/db.json');
@@ -26,7 +26,7 @@ notesRouter.post("/", (req, res) => {
             status: 'success',
             body: newNote,
         };
-
+        console.log("note's POST successful.")
         res.json(output);
     }else{
         res.json('Error in adding note to DB.');
@@ -39,13 +39,14 @@ notesRouter.delete("/:id", (req, res) => {
         const data = JSON.parse(rawData);
         console.log (data);
         const newNotes = data.filter((element) => {
-            console.log(element.note_id);
+            console.log(element.id);
             console.log(req.params.id);
-            return element.note_id !== req.params.id;
+            return element.id !== req.params.id;
         });
         console.log(newNotes);
         if(newNotes !== data){
             writeToFile("./db/db.json", newNotes);
+            console.log("note's DELETE successful.")
             res.json(`Note sucessfully deleted.`);
         }
         else{
